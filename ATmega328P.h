@@ -446,17 +446,22 @@
 /* Timer/Counter 2 Output Compare Register B */
 #define OCR2B _SFR_IO8(0xB4) /* Timer/Counter 2 Output Compare Register B */
 
+/* TWI Baudrate Register */
 #define TWBR _SFR_IO8(0xB8) /* TWI Baudrate Register */
 
+/* TWI Status Register */
 #define TWSR  _SFR_IO8(0xB9) /* TWI Status Register */
 #define TWPS0 0              /* TWI Prescaler Bit 0 */
 #define TWPS1 1              /* TWI Prescaler Bit 1 */
 
+/* TWI Address Register (in slave mode) */
 #define TWAR  _SFR_IO8(0xBA) /* TWI Address Register (in slave mode) */
 #define TWGCE 0              /* TWI General Call Recognition Enable Bit */
 
+/* TWI Data Register */
 #define TWDR _SFR_IO8(0xBB) /* TWI Data Register */
 
+/* TWI Control Register */
 #define TWCR  _SFR_IO8(0xBC) /* TWI Control Register */
 #define TWIE  0              /* TWI Interrupt Enable Bit */
 #define TWEN  2              /* TWI Enable Bit */
@@ -468,6 +473,7 @@
 
 #define TWAMR _SFR_IO8(0xBD) /* TWI Address Mask Register */
 
+/* USART Control and Status Register A */
 #define UCSRA _SFR_IO8(0xC0) /* USART Control and Status Register A */
 #define MPCM  0              /* Multi-processor Communication Mode Bit */
 #define U2X   1              /* Double the USART Transmission Speed Bit */
@@ -478,6 +484,7 @@
 #define TXC   6              /* USART Transmit Complete Bit */
 #define RXC   7              /* USART Receive Complete Bit */
 
+/* USART Control and Status Register B */
 #define UCSRB _SFR_IO8(0xC1) /* USART Control and Status Register B */
 #define TXB8  0              /* Transmit Data Bit 8 */
 #define RXB8  1              /* Receive Data Bit 8 */
@@ -488,6 +495,7 @@
 #define TXCIE 6              /* TX Complete Interrupt Enable Bit */
 #define RXCIE 7              /* RX Complete Interrupt Enable Bit */
 
+/* USART Control and Status Register C */
 #define UCSRC  _SFR_IO8(0xC2) /* USART Control and Status Register C */
 #define UCPOL  0              /* Clock Polarity */
 #define UCSZ0  1              /* Character Size Bit 0 */
@@ -531,4 +539,5 @@
 #define USART_UDRE_vect _VECTOR(19)   /* USART Data Register Empty */
 #define ADC_vect _VECTOR(21)          /* ADC Conversion Complete */
 #define TWI_vect _VECTOR(25)          /* Two Wire Serial Interface */
+
 #endif
