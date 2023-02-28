@@ -6,16 +6,6 @@
 #endif
 
 /* General macros */
-/* TWI */
-#define TWI_BUS      /* TWI bus */
-#define SCL_DDR DDRC /* <Serial Clock> Data Direction Register */
-#define SCL_DOR DORC /* <Serial Clock> Data Output Register */
-#define SCL_DIR DIRC /* <Serial Clock> Data Input Register */
-#define SCL_BIT 5    /* <Serial Clock> Bit */
-#define SDA_DDR DDRC /* <Serial Data> Data Direction Register */
-#define SDA_DOR DORC /* <Serial Data> Data Output Register */
-#define SDA_DIR DIRC /* <Serial Data> Data Input Register */
-#define SDA_BIT 4    /* <Serial Data> Bit */
 /* SPI */
 #define SPI_BUS       /* SPI bus */
 #define SS_DDR DDRB   /* <Slave Select> Data Direction Register */
